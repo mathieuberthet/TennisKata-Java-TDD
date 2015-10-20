@@ -2,6 +2,8 @@ package fr.iutvalence.info.dut.m3105.tenniskata.tdd;
 public class TennisGame
 {
 
+	public static final String[] SERVER_SCORE = {"love", "fifteen", "thirty", "forty"};
+	public static final String[] RECEIVER_SCORE = {"love", "fifteen", "thirty", "forty"};
 	public static final String LOVE_ALL = "love all";
 	public static final String FIFTEEN_LOVE = "fifteen love";
 	public static final String LOVE_FIFTEEN = "love fifteen";
@@ -9,27 +11,25 @@ public class TennisGame
 	public static final String THRITY_LOVE = "thirty love";
 	public static final String FORTY_LOVE = "forty love";
 	
-//	public int serverScore;
-//	public int receiverScore;
-//	
-//	
-//	
-//
-//	public TennisGame() 
-//	{
-//		this.serverScore = 0;
-//		this.receiverScore = 0;
-//	}
-//
-//	public int getServerScore() 
-//	{
-//		return serverScore;
-//	}
-//
-//	public int getReceiverScore() 
-//	{
-//		return receiverScore;
-//	}
+	public int serverScore;
+	public int receiverScore;	
+	
+
+	public TennisGame() 
+	{
+		this.serverScore = 0;
+		this.receiverScore = 0;
+	}
+
+	public int getServerScore() 
+	{
+		return serverScore;
+	}
+
+	public int getReceiverScore() 
+	{
+		return receiverScore;
+	}
 	
 	public String getScore() 
 	{
