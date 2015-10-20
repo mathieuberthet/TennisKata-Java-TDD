@@ -16,5 +16,11 @@ public class TennisGameTest
 		assertEquals(newTennisGame.getScore(), "love all");
 	}
 	
+	@Test
+	public void afterOnePointScoreIsFifteenAll()
+	{
+		TennisGame newTennisGame = new TennisGame();
+		assertEquals(newTennisGame.getScoreAfterPoint(), "fifteen love");
+	}
 
 }

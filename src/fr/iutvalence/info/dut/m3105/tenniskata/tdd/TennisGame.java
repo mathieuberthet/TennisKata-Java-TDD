@@ -3,6 +3,7 @@ public class TennisGame
 {
 
 	private static final String SCORE = "love all";
+	private static final String SCORE_AFTER_POINT = "fifteen love";
 	
 	public TennisGame() 
 	{
@@ -13,6 +14,11 @@ public class TennisGame
 	{
 		return SCORE;
 		
+	}
+
+	public String getScoreAfterPoint() 
+	{
+		return SCORE_AFTER_POINT;
 	}
 
 }
