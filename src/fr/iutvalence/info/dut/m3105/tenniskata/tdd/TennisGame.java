@@ -2,7 +2,7 @@ package fr.iutvalence.info.dut.m3105.tenniskata.tdd;
 public class TennisGame
 {
 
-	public static final String SCORE = "love all";
+	public static final String SCORE_START = "love all";
 	public static final String SCORE_AFTER_POINT = "fifteen love";
 	public static final String SCORE_AFTER_ENNEMY_POINT = "love fifteen";
 	public static final String SCORE_FIFTEEN = "fifteen all";
@@ -14,7 +14,7 @@ public class TennisGame
 
 	public String getScore() 
 	{
-		return SCORE;
+		return SCORE_START;
 		
 	}
 

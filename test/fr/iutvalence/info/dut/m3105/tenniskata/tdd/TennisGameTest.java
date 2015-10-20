@@ -13,7 +13,7 @@ public class TennisGameTest
 	public void makeSureThatScoreIsLoveAllAtBeginnning()
 	{
 		TennisGame newTennisGame = new TennisGame();
-		assertEquals(newTennisGame.getScore(), TennisGame.SCORE);
+		assertEquals(newTennisGame.getScore(), TennisGame.SCORE_START);
 	}
 	
 	@Test
