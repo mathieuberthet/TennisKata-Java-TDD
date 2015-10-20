@@ -20,14 +20,20 @@ public class TennisGameTest
 	public void afterOnePointScoreIsFifteenLove()
 	{
 		TennisGame newTennisGame = new TennisGame();
-		assertEquals(newTennisGame.getScoreAfterPoint(), "fifteen love");
+		assertEquals(newTennisGame.getScoreAfterPoint(), TennisGame.SCORE_AFTER_POINT);
 	}
 	
 	@Test
 	public void afterOnePointOfEnnemyScoreIsLoveFifteen()
 	{
 		TennisGame newTennisGame = new TennisGame();
-		assertEquals(newTennisGame.getScoreAfterEnnemyPoint(), "love fifteen");
+		assertEquals(newTennisGame.getScoreAfterEnnemyPoint(), TennisGame.SCORE_AFTER_ENNEMY_POINT);
 	}
 
+	@Test
+	public void afterBothPlayerMarkOnePoint()
+	{
+		TennisGame newTennisGame = new TennisGame();
+		assertEquals(newTennisGame.getScoreAfterBothPlayerMarkOnePoint(), TennisGame.SCORE_FIFTEEN);
+	}
 }
