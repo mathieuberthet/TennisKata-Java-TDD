@@ -13,21 +13,21 @@ public class TennisGameTest
 	public void makeSureThatScoreIsLoveAllAtBeginnning()
 	{
 		TennisGame newTennisGame = new TennisGame();
-		assertEquals(newTennisGame.getScore(), TennisGame.SCORE_START);
+		assertEquals(newTennisGame.getScore(), TennisGame.LOVE_ALL);
 	}
 	
 	@Test
 	public void afterOnePointScoreIsFifteenLove()
 	{
 		TennisGame newTennisGame = new TennisGame();
-		assertEquals(newTennisGame.getScoreAfterPoint(), TennisGame.SCORE_AFTER_POINT);
+		assertEquals(newTennisGame.getScoreAfterPoint(), TennisGame.FIFTEEN_LOVE);
 	}
 	
 	@Test
 	public void afterOnePointOfEnnemyScoreIsLoveFifteen()
 	{
 		TennisGame newTennisGame = new TennisGame();
-		assertEquals(newTennisGame.getScoreAfterEnnemyPoint(), TennisGame.SCORE_AFTER_ENNEMY_POINT);
+		assertEquals(newTennisGame.getScoreAfterEnnemyPoint(), TennisGame.LOVE_FIFTEEN);
 	}
 
 	@Test
@@ -35,5 +35,12 @@ public class TennisGameTest
 	{
 		TennisGame newTennisGame = new TennisGame();
 		assertEquals(newTennisGame.getScoreAfterBothPlayerMarkOnePoint(), TennisGame.SCORE_FIFTEEN);
+	}
+	
+	@Test
+	public void serverWonTwoPoint()
+	{
+		TennisGame newTennisGame = new TennisGame();
+		assertEquals(newTennisGame.getServerScoreTwoPoint(), TennisGame.THRITY_LOVE);
 	}
 }

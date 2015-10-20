@@ -2,33 +2,55 @@ package fr.iutvalence.info.dut.m3105.tenniskata.tdd;
 public class TennisGame
 {
 
-	public static final String SCORE_START = "love all";
-	public static final String SCORE_AFTER_POINT = "fifteen love";
-	public static final String SCORE_AFTER_ENNEMY_POINT = "love fifteen";
+	public static final String LOVE_ALL = "love all";
+	public static final String FIFTEEN_LOVE = "fifteen love";
+	public static final String LOVE_FIFTEEN = "love fifteen";
 	public static final String SCORE_FIFTEEN = "fifteen all";
+	public static final String THRITY_LOVE = "thirty love";
 	
+	public int serverScore;
+	public int receiverScore;
+	
+	
+	
+
 	public TennisGame() 
 	{
-		
+		this.serverScore = 0;
+		this.receiverScore = 0;
 	}
 
+	public int getServerScore() 
+	{
+		return serverScore;
+	}
+
+	public int getReceiverScore() 
+	{
+		return receiverScore;
+	}
+	
 	public String getScore() 
 	{
-		return SCORE_START;
+		return LOVE_ALL;
 		
 	}
 
 	public String getScoreAfterPoint() 
 	{
-		return SCORE_AFTER_POINT;
+		return FIFTEEN_LOVE;
 	}
 
 	public String getScoreAfterEnnemyPoint() {
-		return SCORE_AFTER_ENNEMY_POINT;
+		return LOVE_FIFTEEN;
 	}
 
 	public String getScoreAfterBothPlayerMarkOnePoint() {
 		return SCORE_FIFTEEN;
+	}
+
+	public String getServerScoreTwoPoint() {
+		return THRITY_LOVE;
 	}
 
 }
