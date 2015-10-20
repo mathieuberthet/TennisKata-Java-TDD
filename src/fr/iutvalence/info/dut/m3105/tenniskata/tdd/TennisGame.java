@@ -7,28 +7,29 @@ public class TennisGame
 	public static final String LOVE_FIFTEEN = "love fifteen";
 	public static final String SCORE_FIFTEEN = "fifteen all";
 	public static final String THRITY_LOVE = "thirty love";
+	public static final String FORTY_LOVE = "forty love";
 	
-	public int serverScore;
-	public int receiverScore;
-	
-	
-	
-
-	public TennisGame() 
-	{
-		this.serverScore = 0;
-		this.receiverScore = 0;
-	}
-
-	public int getServerScore() 
-	{
-		return serverScore;
-	}
-
-	public int getReceiverScore() 
-	{
-		return receiverScore;
-	}
+//	public int serverScore;
+//	public int receiverScore;
+//	
+//	
+//	
+//
+//	public TennisGame() 
+//	{
+//		this.serverScore = 0;
+//		this.receiverScore = 0;
+//	}
+//
+//	public int getServerScore() 
+//	{
+//		return serverScore;
+//	}
+//
+//	public int getReceiverScore() 
+//	{
+//		return receiverScore;
+//	}
 	
 	public String getScore() 
 	{
@@ -41,16 +42,24 @@ public class TennisGame
 		return FIFTEEN_LOVE;
 	}
 
-	public String getScoreAfterEnnemyPoint() {
+	public String getScoreAfterEnnemyPoint() 
+	{
 		return LOVE_FIFTEEN;
 	}
 
-	public String getScoreAfterBothPlayerMarkOnePoint() {
+	public String getScoreAfterBothPlayerMarkOnePoint() 
+	{
 		return SCORE_FIFTEEN;
 	}
 
-	public String getServerScoreTwoPoint() {
+	public String getServerScoreTwoPoint() 
+	{
 		return THRITY_LOVE;
+	}
+
+	public Object getServerScoreThreePoint() 
+	{
+		return FORTY_LOVE;
 	}
 
 }

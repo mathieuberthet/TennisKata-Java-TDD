@@ -43,4 +43,11 @@ public class TennisGameTest
 		TennisGame newTennisGame = new TennisGame();
 		assertEquals(newTennisGame.getServerScoreTwoPoint(), TennisGame.THRITY_LOVE);
 	}
+	
+	@Test
+	public void serverWonThreePoint()
+	{
+		TennisGame newTennisGame = new TennisGame();
+		assertEquals(newTennisGame.getServerScoreThreePoint(), TennisGame.FORTY_LOVE);
+	}
 }
